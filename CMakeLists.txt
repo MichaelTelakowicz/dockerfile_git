@@ -33,7 +33,7 @@ target_link_libraries(srcMLXPathCountTest PRIVATE srcMLXPathCount)
 # run
 add_custom_target(run
     COMMENT "Complexity"
-    COMMAND $<TARGET_FILE:srccomplexity> < ${CMAKE_CURRENT_SOURCE_DIR}/srcMLXPathCount.cpp.xml
+    COMMAND $<TARGET_FILE:srccomplexity> 0
     DEPENDS srccomplexity
     USES_TERMINAL
     WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
