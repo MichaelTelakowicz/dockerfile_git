@@ -21,7 +21,7 @@ int main(int argc, const char* argv[]) {
     }
 
     // input is filename, or stdin as "-"
-    std::string_view filename = "../srcMLXPathCount.cpp.xml";
+    std::string_view filename = "./srcMLXPathCount.cpp.xml";
 
     // The cyclomatic complexity for a single function/method is the number of conditions + 1,
     // e.g., f() has 2 conditions (and complexity 3), and g() has 3 conditions (and complexity 4).

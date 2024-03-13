@@ -30,14 +30,5 @@ target_link_libraries(srcMLXPathCount PRIVATE LibXml2::LibXml2)
 target_link_libraries(srccomplexity PRIVATE srcMLXPathCount)
 target_link_libraries(srcMLXPathCountTest PRIVATE srcMLXPathCount)
 
-# run
-add_custom_target(run
-    COMMENT "Complexity"
-    COMMAND $<TARGET_FILE:srccomplexity> 0
-    DEPENDS srccomplexity
-    USES_TERMINAL
-    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-)
-
 # install
 install(PROGRAMS $<TARGET_FILE:srccomplexity> TYPE BIN)
